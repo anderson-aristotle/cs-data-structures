@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-# An example class
+# A LinkedList class
 class LinkedList
 end
