@@ -12,11 +12,40 @@ const expect = chai.expect
 
 const Queue = require('../lib/queue')
 
-describe('Queue', function () {
-  describe('a new queue', function () {
-    const queue = new Queue()
-    it('is empty', function () {
-      expect(queue.isEmpty).to.be.true
-    })
+describe('Queue - JS', function () {
+  let queue = new Queue()
+
+  it('has an `isEmpty` method', function () {
+    expect(queue).to.respondTo('isEmpty')
+  })
+
+  it('is empty when newly created', function () {
+    expect(queue.isEmpty()).to.be.true
+  })
+
+  it('has a `enqueue` method', function () {
+    expect(queue).to.respondTo('enqueue')
+  })
+
+  it('has a `dequeue` method', function () {
+    expect(queue).to.respondTo('dequeue')
+  })
+
+  it('`dequeue` method returns the first enqueued value', function () {
+    queue = new Queue()
+
+    queue.enqueue(100)
+    queue.enqueue(200)
+    expect(queue.dequeue()).to.eq(100)
+  })
+
+  it('`dequeue` method removes the first value from the store', function () {
+    queue = new Queue()
+
+    queue.enqueue(100)
+    queue.enqueue(200)
+    queue.dequeue()
+    expect(queue.dequeue()).to.eq(200)
+    expect(queue.dequeue()).to.be.undefined
   })
 })
