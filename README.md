@@ -45,6 +45,7 @@ By the end of this, developers should be able to:
 
 1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
+1.  Install depenencies with `npm install` and `bundle install`.
 
 ## Abstract data type (ADT)
 
