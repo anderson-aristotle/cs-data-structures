@@ -182,20 +182,29 @@ simple as reserving the memory space for that element, and pointing the "next"
 reference of what was previously the last element to the new element.
 
 Implement a `LinkedList` class in Ruby or JavaScript. **Do not implement the
-list as an array or hash,** or any built-in data type. Your class should be
-capable of the following:
+list as an array or hash,** or any built-in data type. We have provided you some
+starter code in the form of a `LinkedList` class and a `Node` class. The `Node`
+class represents one "link": an object with a value and a pointer to the next
+object.
 
--   Append a new value to the end of the list
--   Prepend a new value to the beginning of the list
--   Find whether a given value is in the list
--   Insert a new value after a given value in the list
--   Remove a given value from the list (warning: tricky!)
--   Find the length of the list
--   Implement `to_s` or `toString` to return all values in the list
+You must implement the following methods:
 
-You may want to create a secondary class to represent the list elements
-themselves, since each consists of two pieces of data. However, make sure not to
-expose these objects to the user of your linked list.
+-   `append`, which adds new value to the end of the list
+-   `prepend`, which adds a value to the beginning of the list
+-   `search`, which returns the first node whose value is equal to the "search
+     term" (in other words, the arguement passed to `search`)
+-   `insertAfter` or `insert_after`, which adds a new node after a given value
+    in the   list
+-   `remove`, which removes the first node containing the target value
+-   `length`, which returns the length of the list
+-   `to_s` or `toString`, which returns a string representing all the values in
+    the list, formatted however you like
+
+There are thorough tests for all of these methods. Run them often! If you're
+working in Ruby, it will be `bin/rake test`. If you're working in JS it will be
+`grunt test`. **For the tests to work you must open up the relevant spec file in
+Atom and replace any instances of `xdescribe` with `describe`.** Otherwise the
+tests will be listed as pending.
 
 ### Linked List Bonus Challenges
 
