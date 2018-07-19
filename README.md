@@ -202,9 +202,13 @@ You must implement the following methods:
 
 There are thorough tests for all of these methods. Run them often! If you're
 working in Ruby, it will be `bin/rake test`. If you're working in JS it will be
-`grunt test`. **For the tests to work you must open up the relevant spec file in
-Atom and replace any instances of `xdescribe` with `describe`.** Otherwise the
-tests will be listed as pending.
+`grunt test`.
+
+**For the tests to work** you must open up the relevant spec file in
+Atom and make a few changes so that the tests are no longer "pending". If
+you're dong the JS version, open up `spec/linked-list.spec.js` and change all
+instances of `xdescribe` to `describe`. If you're using Ruby, open
+`spec/linked_list_spec.rb` and change all instances of `xit` to `it`.
 
 ### Linked List Bonus Challenges
 
