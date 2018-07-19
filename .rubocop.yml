@@ -6,6 +6,10 @@ Style/FrozenStringLiteralComment:
   Exclude:
     - 'snippets/**/*'
 
+Style/EmptyMethod:
+  Exclude:
+    - 'lib/**/*'
+
 AllCops:
   TargetRubyVersion:
     2.5
