@@ -2,7 +2,7 @@
 
 # A LinkedList class
 class LinkedList
-  attr_accesor :head
+  attr_accessor :head
 
   def initialize
     @head = nil
@@ -35,7 +35,7 @@ end
 
 # a class resprenting a single "link" or node in a linked list
 class Node
-  attr_accessor :value, next_node
+  attr_accessor :value, :next_node
 
   def initialize(value, next_node)
     @value = value
