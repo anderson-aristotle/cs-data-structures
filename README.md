@@ -4,8 +4,8 @@
 
 ## Prerequisites
 
--   Familiarity with a high-level programming language implementing dynamic
-    arrays.
+-   [CS](https://git.generalassemb.ly/ga-wdi-boston/cs)
+-   [CS Algorithms](https://git.generalassemb.ly/ga-wdi-boston/cs-algorithms)
 
 ## Objectives
 
@@ -13,6 +13,7 @@ By the end of this, developers should be able to:
 
 -   Describe a few basic data structures by listing three traits of each
 -   Identify the time-complexity of basic operations on each data structure
+-   Implement a linked list in either Ruby or Javscript
 
 ## Preparation
 
