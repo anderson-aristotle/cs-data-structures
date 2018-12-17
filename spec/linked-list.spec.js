@@ -12,7 +12,7 @@ const lab = require('../lib/linked-list')
 const LinkedList = lab.LinkedList
 const Node = lab.Node
 
-xdescribe('LinkedList - JS', function () {
+describe('LinkedList - JS', function () {
   describe('append', function () {
     const list = new LinkedList()
 
