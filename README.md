@@ -1,115 +1,25 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Computer Science: An introduction
-
-[Computer science](https://en.wikipedia.org/wiki/Computer_science) as an area of
-study comprises everything necessary for the design, construction, and use of
-computers.
-
-What does computer science have to do with modern web development? Not much, on
-the surface. As application developers, we can do our job well by following best
-practices, guided by our experience. There will rarely be a time when you are
-interested in the time-complexity of a method you write. Complexity and data
-structures are something language designers worry about, not developers, right?
-
-Well, no. While it is true that we don't usually care much about optimization,
-there are a few reasons why developers should care a bit about classic topics in
-introductory computer science (CS). First, classic problems allow us to practice
-our problem solving skills; in fact, most of our lesson today can be completed
-without coding. Second, being familiar with the tradeoffs inherent in choosing
-an algorithm or a data structure have direct parallels in choices you make
-writing your application code. Lastly, some of your colleagues will have CS
-degrees, and being able to understand the jargon and figures of speech they use
-will help you communicate with them. Perhaps most importantly, these colleagues
-will probably have a say in hiring you! Nearly every technical interview touches
-on these topics.
-
-We'll focus on one area of theoretical computer science, algorithms and data
-structures, and begin with abstract data types.
+# Computer Science: Data Structures
 
 ## Prerequisites
 
--   Familiarity with a high-level programming language implementing dynamic
-    arrays.
+-   [CS](https://git.generalassemb.ly/ga-wdi-boston/cs)
+-   [CS Algorithms](https://git.generalassemb.ly/ga-wdi-boston/cs-algorithms)
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Define abstract data type (ADT).
--   Create stacks and queues from dynamic arrays.
 -   Describe a few basic data structures by listing three traits of each
 -   Identify the time-complexity of basic operations on each data structure
+-   Implement a linked list in either Ruby or Javscript
 
 ## Preparation
 
 1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Install depenencies with `npm install` and `bundle install`.
-
-## Abstract data type (ADT)
-
-An [ADT](https://en.wikipedia.org/wiki/Abstract_data_type) is a type defined by
-what it does, rather than how it is implemented.  Specific implementations have
-limitations not found in the ADT and must be able to create instances of the
-type.
-
-## Stack
-
-A stack implements a last in, first out data store (LIFO).
-
-### Discussion: Stack
-
-Stack operations:
-
--   `empty?` - check to see if there are any items on a stack.
--   `push` - add an item onto the top of a stack.
--   `pop` - remove and return an item from the top of a stack.
-
-Visualizing stack implementations:
-
--   As an [array](http://www.cs.usfca.edu/~galles/visualization/StackArray.html).
--   As a [list](http://www.cs.usfca.edu/~galles/visualization/StackLL.html).
-
-### Demonstration: Implementing a stack in JavaScript
-
-### Code along: Annotating a stack implementation in JavaScript
-
-### Lab: Implementing a stack in Ruby
-
-## Queue
-
-A queue implements a first in, first out data store (FIFO).
-
-### Discussion: Queue
-
-Queue operations:
-
--   `empty?` - check to see if there are any items in a queue.
--   `enqueue` - add an item to the tail of a queue.
--   `dequeue` - remove an item from the head of a queue.
-
-Visualizing queue implementations:
-
--   As an [array](http://www.cs.usfca.edu/~galles/visualization/QueueArray.html)
--   As a [list](http://www.cs.usfca.edu/~galles/visualization/QueueLL.html)
-
-### Demonstration: Implementing a queue in Ruby
-
-### Code along: Annotating a queue implementation in Ruby
-
-### Lab: Implementing a queue in JavaScript
-
-### Discussion: Implementation Details and Applications
-
-Do we need `empty?` (or `isEmpty` or `isempty`) when implementing either ADT in
-a language that has a "nothing" type  (`nil` in Ruby, `undefined` in JavaScript,
-or `None` in Python)?  Why or why not?
-
-How should we handle the limitations of concrete implementations of either ADT?
-
-What kinds of algorithms or applications would be well-suited to
-stacks or queues?
 
 ## Data Structures
 
@@ -203,12 +113,6 @@ You must implement the following methods:
 There are thorough tests for all of these methods. Run them often! If you're
 working in Ruby, it will be `bin/rake test`. If you're working in JS it will be
 `grunt test`.
-
-**For the tests to work** you must open up the relevant spec file in
-Atom and make a few changes so that the tests are no longer "pending". If
-you're dong the JS version, open up `spec/linked-list.spec.js` and change all
-instances of `xdescribe` to `describe`. If you're using Ruby, open
-`spec/linked_list_spec.rb` and change all instances of `xit` to `it`.
 
 ### Linked List Bonus Challenges
 

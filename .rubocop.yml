@@ -9,6 +9,8 @@ Style/FrozenStringLiteralComment:
 Style/EmptyMethod:
   Exclude:
     - 'lib/**/*'
+Documentation:
+  Enabled: false
 
 AllCops:
   TargetRubyVersion:
