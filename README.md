@@ -228,6 +228,7 @@ These can be attempted in any order; they are not dependent on each other.
 ## Additional Resources
 
 -   [Data Structure Visualization](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+-   [Implementing Data Structures in Ruby](https://medium.com/amiralles/mastering-data-structures-in-ruby-recap-682a698b90d0)
 
 ## [License](LICENSE)
 
