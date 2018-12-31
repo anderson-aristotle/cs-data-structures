@@ -139,6 +139,41 @@ but they would be excellent practice for job interviews.
     loop.
 -   Revisit your stack and queue implementation, and refactor them to use linked
     lists (your linked list implementation) instead of arrays.
+-   Implement a linked list recursively.
+
+## Recursion
+A recursive method is one in which the method calls itself.
+
+``` JS
+const foo = function () {
+  // additional code
+  foo()
+}
+```
+
+Let’s take a look at a recursion function which determines whether a positive
+integer is even.
+
+```JS
+const recursiveMod2 = function (inNum) {
+  if (inNum === 0) {
+       return true
+  } else if (inNum === 1) {
+       return false
+  } else {
+       return recursiveMod2 (inNum - 2)
+  }
+}
+```
+
+What would happen if we called this function with -1? To avoid infinite
+method calls, we need to be mindful that there is an end condition-- similar to
+avoiding infinite loops using iterative methods. In fact, iterative methods
+can generally be converted to recursive methods, and vice versa.
+
+Recursion is an intuitive way to write methods for data structures in which one
+element contains or links to a finite number of the same type of element--
+such as a linked list node and its child nodes.
 
 ## Optional Lab: Implement a Binary Tree
 
