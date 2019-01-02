@@ -139,6 +139,7 @@ but they would be excellent practice for job interviews.
     loop.
 -   Revisit your stack and queue implementation, and refactor them to use linked
     lists (your linked list implementation) instead of arrays.
+-   Implement a linked list [recursively.](https://www.cs.utah.edu/~germain/PPS/Topics/recursion.html)
 
 ## Optional Lab: Implement a Binary Tree
 
@@ -193,6 +194,7 @@ These can be attempted in any order; they are not dependent on each other.
 ## Additional Resources
 
 -   [Data Structure Visualization](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+-   [Implementing Data Structures in Ruby](https://medium.com/amiralles/mastering-data-structures-in-ruby-recap-682a698b90d0)
 
 ## [License](LICENSE)
 
